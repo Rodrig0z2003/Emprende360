@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --poppins: 'Poppins', sans-serif;
+  --purple: #6A0DAD;
+  --grey: #eee;
+  --light: #F9F9F9;
+  --dark-grey: #AAAAAA;
+  --dark: #342E37;
+  --red: #DB504A;
+  --green: #28A745;
+}
+
+body.dark {
+  --light: #0C0C1E;
+  --grey: #060714;
+  --dark: #FBFBFB;
+  --dark-grey: #AAAAAA;
+}
+
+.students-table-container {
+  padding: 20px;
+  font-family: var(--poppins);
+  color: var(--dark);
+}
+
+.students-table-container h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.students-table thead {
+  background-color: var(--purple);
+  color: var(--light);
+}
+
+.students-table th, .students-table td {
+  padding: 10px 15px;
+  border: 1px solid var(--grey);
+  text-align: left;
+}
+
+.students-table tbody tr {
+  background-color: var(--light);
+  transition: background-color 0.3s;
+}
+
+.students-table tbody tr:hover {
+  background-color: var(--grey);
+}
+
+.students-table-container .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.students-table-container .btn {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.students-table-container .btn-edit {
+  background-color: var(--green);
+  color: var(--light);
+}
+
+.students-table-container .btn-edit i {
+  margin-right: 5px;
+}
+
+.students-table-container .btn-edit:hover {
+  background-color: darken(var(--green), 10%);
+}
+
+.students-table-container .btn-danger {
+  background-color: var(--red);
+  color: var(--light);
+}
+
+.students-table-container .btn-danger i {
+  margin-right: 5px;
+}
+
+.students-table-container .btn-danger:hover {
+  background-color: darken(var(--red), 10%);
+}
+
+body.dark .students-table-container {
+  color: var(--light);
+}
+
+body.dark .students-table thead {
+  background-color: var(--dark-grey);
+}
+
+body.dark .students-table tbody tr {
+  background-color: var(--grey);
+}
+
+body.dark .students-table tbody tr:hover {
+  background-color: var(--dark-grey);
+}
+
+body.dark .students-table th, 
+body.dark .students-table td {
+  border: 1px solid var(--dark-grey);
+  color: var(--light); /* Ensure text is white in dark mode */
+}
+
+/* barra de busqueda:*/
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.search-input {
+  width: 50%;
+  padding: 10px 20px 10px 40px; /* Espacio adicional para el icono */
+  border-radius: 25px;
+  border: 1px solid var(--grey);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-family: var(--poppins);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--purple);
+  box-shadow: 0 0 10px rgba(106, 13, 173, 0.5);
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  font-size: 18px;
+  color: var(--dark-grey);
+}
+
+body.dark .search-input {
+  border: 1px solid var(--dark-grey);
+  background-color: var(--grey);
+  color: var(--dark);
+}
+
+body.dark .search-input:focus {
+  border-color: var(--purple);
+  box-shadow: 0 0 10px rgba(106, 13, 173, 0.5);
+}
+
+body.dark .search-icon {
+  color: var(--light);
+}

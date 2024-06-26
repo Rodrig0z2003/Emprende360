@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --blue: #3C91E6;
+    --grey: #eee;
+    --light: #F9F9F9;
+    --dark-grey: #AAAAAA;
+    --dark: #342E37;
+    --red: #DB504A;
+    --green: #28A745;
+    --secondary: #6c757d;
+}
+
+body.dark {
+    --light: #0C0C1E;
+    --grey: #1A1A2E;
+    --dark: #FBFBFB;
+    --dark-grey: #AAAAAA;
+}
+
+.view-questions {
+    padding: 20px;
+    font-family: var(--poppins);
+    color: var(--dark);
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: var(--light);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-questions h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: var(--light);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--poppins);
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary); /* Ensure it doesn't change color on hover */
+}
+
+.questions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question-card {
+    background-color: var(--grey);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.question-card p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+body.dark .view-questions {
+    background-color: var(--grey);
+    color: var(--light);
+}
+
+body.dark .question-card {
+    background-color: var(--dark-grey);
+    color: var(--light);
+}
+
+body.dark .btn-secondary {
+    background-color: #4a4a4a;
+}
+
+body.dark .btn-secondary:hover {
+    background-color: #4a4a4a;
+}

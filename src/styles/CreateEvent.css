@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --blue: #3C91E6;
+    --grey: #eee;
+    --light: #F9F9F9;
+    --dark-grey: #AAAAAA;
+    --dark: #342E37;
+    --red: #DB504A;
+    --green: #28A745;
+    --secondary: #6c757d;
+}
+
+body.dark {
+    --light: #0C0C1E;
+    --grey: #1A1A2E;
+    --dark: #FBFBFB;
+    --dark-grey: #AAAAAA;
+}
+
+.create-event {
+    padding: 20px;
+    font-family: var(--poppins);
+    color: var(--dark);
+    max-width: 600px;
+    margin: 40px auto; /* Adds margin to the top */
+    background-color: var(--light);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-event h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    font-family: var(--poppins);
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: var(--light);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--poppins);
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.btn-primary {
+    background-color: var(--blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--blue); /* Ensure it doesn't change color on hover */
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary); /* Ensure it doesn't change color on hover */
+}
+
+body.dark .create-event {
+    background-color: var(--grey);
+    color: var(--light);
+}
+
+body.dark .form-group input, body.dark .form-group textarea {
+    background-color: var(--dark-grey);
+    color: var(--light);
+    border: 1px solid var(--light);
+}
+
+body.dark .form-group input:focus, body.dark .form-group textarea:focus {
+    border-color: var(--blue);
+}
+
+body.dark .btn-secondary {
+    background-color: #4a4a4a;
+}
+
+body.dark .btn-secondary:hover {
+    background-color: #4a4a4a;
+}
